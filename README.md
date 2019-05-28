@@ -1,6 +1,7 @@
 # Kitchen Terraform Example
 
-Simple module to show how to configure / run basic unit tests on a GCP Terraform deployment.
+Simple module to show how to configure / run basic unit tests on a GCP Terraform deployment. 
+Integration tests are run though [test-kitchen](https://github.com/test-kitchen/test-kitchen), [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform), and [InSpec](https://github.com/inspec/inspec).
 
 ## Prerequisites
 
@@ -30,12 +31,7 @@ bundle install
 | project\_id | Project to create resources in | string |  | yes |
 | bucket\_name | Name for the Google Cloud Storage Bucket to create | string |  | yes |
 
-## Testing
-
-### Integration test
-Integration tests are run though [test-kitchen](https://github.com/test-kitchen/test-kitchen), [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform), and [InSpec](https://github.com/inspec/inspec).
-
-### Usage
+## Usage
 The following commands may be used for tests:
 - Run Terraform module directly without tests
 ```sh
