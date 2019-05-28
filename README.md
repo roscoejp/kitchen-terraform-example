@@ -37,17 +37,15 @@ Integration tests are run though [test-kitchen](https://github.com/test-kitchen/
 
 ### Using kitchen
 The following commands may be used for tests:
-> Run Terraform module directly without tests
+- Run Terraform module directly without tests
 ```sh
 bundle exec kitchen converge
 ```
-
-> Create Resources and run tests:
+- Create Resources and run tests:
 ```sh
 bundle exec kitchen verify
 ```
-
-> Destroy Terraform resources:
+- Destroy Terraform resources:
 ```sh
 bundle exec kitchen destroy
 ```
