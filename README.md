@@ -1,6 +1,5 @@
 # Kitchen Terraform Example
 
-# Description 
 Simple module to show how to configure / run basic unit tests on a GCP Terraform deployment.
 
 ## Prerequisites
