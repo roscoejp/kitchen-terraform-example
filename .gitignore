@@ -1,0 +1,19 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
+
+# .json files
+*.json
+
+# Ruby
+.bundle
+vendor/
+.kitchen
+inspec.lock
+Gemfile.lock
