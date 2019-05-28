@@ -41,11 +41,11 @@ The following commands may be used for tests:
 ```sh
 bundle exec kitchen converge
 ```
-- Create Resources and run tests:
+- Create Resources and run tests
 ```sh
 bundle exec kitchen verify
 ```
-- Destroy Terraform resources:
+- Destroy Terraform resources
 ```sh
 bundle exec kitchen destroy
 ```
