@@ -35,7 +35,7 @@ bundle install
 ### Integration test
 Integration tests are run though [test-kitchen](https://github.com/test-kitchen/test-kitchen), [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform), and [InSpec](https://github.com/inspec/inspec).
 
-### Using kitchen
+### Usage
 The following commands may be used for tests:
 - Run Terraform module directly without tests
 ```sh
