@@ -15,7 +15,7 @@ Simple module to show how to configure / run basic unit tests on a GCP Terraform
 2. Create a Google Cloud [service account JSON key](https://cloud.google.com/iam/docs/creating-managing-service-account-keys)
 3. Set the env variable `GOOGLE_APPLICATION_CREDENTIALS` to point to the service account key file
 ```bash
-$ export GOOGLE_APPLICATION_CREDENTIALS='/path/to/key/file/terraform-test-project-feb7993e8660.json'
+$ export GOOGLE_APPLICATION_CREDENTIALS='/path/to/google/credentials.json'
 ```
 4. Install Ruby
 5. Install necessary gems and dependencies from included `GEMFILE`
