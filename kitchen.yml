@@ -3,13 +3,12 @@
 # https://www.rubydoc.info/github/newcontext-oss/kitchen-terraform/Kitchen/Driver/Terraform
 driver:
   name: terraform
-  variable_files: 
-    - test.tfvars
-  parallelism: 4
 
 provisioner:
   name: terraform
 
+# More Terraform Verifier info:
+# https://www.rubydoc.info/github/newcontext-oss/kitchen-terraform/Kitchen/Verifier/Terraform
 verifier:
   name: terraform
 
@@ -18,8 +17,11 @@ platforms:
 
 suites:
   - name: kt_suite
-    # More Terraform Verifier info:
-    # https://www.rubydoc.info/github/newcontext-oss/kitchen-terraform/Kitchen/Verifier/Terraform
+    driver:
+      name: terraform
+      variable_files: 
+        - test/integration/kt_suite/files/test.tfvars
+      parallelism: 4
     verifier:
       systems:
         - name: terraform
