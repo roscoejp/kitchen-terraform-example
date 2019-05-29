@@ -1,12 +1,12 @@
-#  Local .terraform directories
+#  Terraform
 **/.terraform/*
-
-# .tfstate files
 *.tfstate
 *.tfstate.*
-
-# .tfvars files
 *.tfvars
+
+# Kitchen
+**/.kitchen/*
+.kitchen
 
 # .json files
 *.json
@@ -14,6 +14,4 @@
 # Ruby
 .bundle
 vendor/
-.kitchen
-inspec.lock
-Gemfile.lock
+*.lock
