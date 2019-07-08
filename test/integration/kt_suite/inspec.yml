@@ -12,14 +12,3 @@ depends:
   url: https://github.com/inspec/inspec-gcp/archive/master.tar.gz
 supports:
 - platform: gcp
-
-attributes:
-- name: project_id
-  required: true
-  description: 'The GCP project identifier.'
-  type: string
-- name: bucket_name
-  required: true
-  description: 'The GCS bucket name.'
-  type: string
-

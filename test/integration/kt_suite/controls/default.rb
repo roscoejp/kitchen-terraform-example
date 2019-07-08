@@ -1,6 +1,6 @@
-
-
-name = attribute('bucket_name')
+yaml = YAML.load(inspec.profile.file('attributes.yml'))
+project = yaml['project_id']
+bucket = yaml['bucket_name']
 
 title 'test'
 control 'bucket_create' do

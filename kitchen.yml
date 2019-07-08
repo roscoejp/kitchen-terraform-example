@@ -24,9 +24,7 @@ suites:
       parallelism: 4
     verifier:
       systems:
-        - name: terraform
+        - name: local-gcp
           backend: gcp
-          controls:
-            - bucket_create
           attrs:
             - test/integration/kt_suite/files/attributes.yml
